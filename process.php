@@ -1,6 +1,6 @@
 <?php
 
-//I have used PHP filter_vars to insure protection from numerous code injections and make the script attack-proof
+//I have used PHP filter_vars for sanitization to insure protection from numerous code injections and make the script attack-proof
 
 $first_name = filter_var($_POST["first_name"], FILTER_SANITIZE_STRING); //set PHP variables like this so we can use them anywhere in code below
 $last_name = filter_var($_POST["last_name"], FILTER_SANITIZE_STRING);

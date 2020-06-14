@@ -11,6 +11,9 @@ $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 $newsletter_opt_in = filter_var($_POST["newsletter_opt_in"], FILTER_SANITIZE_STRING);
 $service = filter_var($_POST["service"], FILTER_SANITIZE_STRING);
 
+if(isset($first_name) & !empty(($first_name)){
+    echo "First name is required"; 
+        
 //Open a new connection to the MySQL server
 $conn = new mysqli('localhost', 'root', '', 'test');
 

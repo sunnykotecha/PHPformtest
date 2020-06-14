@@ -1,0 +1,42 @@
+<html>
+   <head>
+   </head>
+   <body>
+      <form method="post" action="process.php">
+         <br>First Name : 
+         <input type="text" name="first_name" required/>
+         </br>
+         <br>Last Name : 
+         <input type="text" name="last_name" required/>
+         </br>
+         <br>Email : 
+         <input type="email" name="email_address" required />
+         </br>
+         <br>Gender: 
+         <select name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+         </select>
+         </br>
+         <br>Age : 
+         <input type="number" name="age" required/>
+         </br>
+         <br>Message : 
+         <textarea name="message"></textarea>
+         </br>
+         <br>Newsletter opt-in
+         <input type="checkbox" name="newsletter_opt_in" value="newsletteroptin">
+         </br>
+         <br>Service:  
+         <input type="radio" name="service" value="development"/>Development
+         <input type="radio" name="service" value="design">Design
+         <input type="radio" name="service" value="optimisation">Optimisation
+         <input type="radio" name="service" value="paidsearch">Paid search
+         </br>
+         <br>
+         <input type="submit" value="Submit" />
+         </br>
+      </form>
+      </body>
+</html>
